@@ -1,0 +1,711 @@
+body{
+    background-color:#050524;
+}
+
+/* ----------------------------------------navbar-------------------------------------------------- */
+.top-nav{
+    display: flex;
+    justify-content: space-around;
+    overflow: hidden;
+    background-color: #050524;
+    margin-top: 10px;
+
+}
+
+.top-nav span p{
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-size: 17px;
+    line-height: 0px;
+    font-family: sans-serif;
+    font-weight: 100;
+    
+}
+
+.top-nav span h5{
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-size: 17px;
+    font-family: sans-serif;
+    line-height: 0px;
+}
+
+.top-nav img{
+    width: 50px;
+    text-align: center;
+}
+
+.top-nav p{
+    font-family: sans-serif;
+    font-weight: 600;
+    font-size: 17px;
+    color: white;
+    text-align: center;
+    padding-top: 0px;
+}
+
+.top-nav a:hover{
+    /* background-color: rgb(246, 246, 246); */
+    color: rgb(235, 90, 90);
+}
+
+
+.top-nav input[type=text]{
+    
+    background: #5c5c92;
+    color: white;
+    padding: 6px;
+    border: none;
+    margin-top: 8px;
+    margin-right: 16px;
+    font-size: 17px;
+    border-radius: 8px
+}
+
+.top-nav .search-container button{
+    float: left;
+    padding: 6px 10px;
+    margin-top: 8px;
+    /* margin-right: 16px; */
+    background: #5c5c92;
+    color: white;
+    font-size: 17px;
+    border: none;
+    cursor: pointer;
+}
+  
+.top-nav .search-container button:hover {
+    background: #ccc;
+}
+
+.top-nav .search-container{
+    color: white;
+    font-size: 17px;
+}
+
+.top-nav .search-container span{
+    color: white;
+    padding-left: 40px;
+    font-size: 25px;
+}
+
+.profile img{
+    border-radius: 50%;
+    /* margin-left: 12vw; */
+}
+
+@media screen and (max-width: 600px) {}
+   .topnav a, .topnav input[type=text] {
+    float: none;
+    display: block;
+    text-align: left;
+    width: 100%;
+    margin: 0;
+    padding: 14px;
+}
+.topnav input[type=text] {
+    border: 1px solid rgb(224, 114, 114);
+}
+
+
+/* -------------------------------------------------- music player------------------------------------------------------- */
+.music-player{
+    /* border: 1px solid white; */
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+/* ----------------------------------------------main section-------------------------------------------------- */
+#main-section{
+    width: 75%;
+    margin-top: 10vh;
+    
+   
+}
+
+/*------------------------------------------------------- header image------------------------------------------------- */
+
+.header-image{
+    /* border: 2px solid black; */
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px
+}
+
+
+
+@keyframes display{
+    0%{
+        transform: translateX(200px);
+        opacity: 0;
+    }
+
+    10%{
+        transform: translateX(0);
+        opacity: 1;
+    }
+
+    20%{
+        transform: translateX(0);
+        opacity: 1;
+    }
+
+    30%{
+        transform: translateX(-200px);
+        opacity: 0;
+    }
+
+    100%{
+        transform: translateX(-200px);
+        opacity: 0;
+    }
+}
+
+.pic-ctn{
+    position: relative;
+    width: 100vw;
+    height: 300px;
+    margin-top: 15vh;
+}
+
+.pic-ctn > img{
+    position: absolute;
+    width: 38vw;
+    top: 0;
+    left: calc(30% - 100px);
+    opacity: o;
+    animation: display 10s infinite;
+}
+
+img:nth-child(2){
+    animation-delay: 2s; 
+}  
+
+img:nth-child(3) {
+    animation-delay: 4s;
+}
+
+img:nth-child(4) {
+    animation-delay: 6s;
+} 
+
+img:nth-child(5) {
+    animation-delay: 8s;
+  }
+ 
+
+
+/* --------------------latest release section-------------------------------------------------- */
+h4{
+    color: white;
+}
+
+.song-item{
+    display: flex;
+    justify-content: space-between;
+    /* margin-right: 30%; */
+}
+
+.song-arange{
+    display: flex;
+    /* border: 1px solid black;  */
+    align-items: center;
+    /* width: 5vw; */
+    /* margin: 10px; */
+    
+}
+
+.song-arange span p{
+    color: white;
+    line-height: 0px;
+    font-size: 13px;
+    font-family: sans-serif;
+}
+
+.song-arange span h5{
+    color: white;
+    line-height: 0px;
+    font-size: 1rem;
+    font-family: sans-serif;
+}
+.song-arange span i{
+    color: white;
+    padding-bottom: 15vh;
+    transform: translateX(-15px);
+    font-size: 29px;
+}
+
+.song-arange:hover img{
+    transform: scale(1.1,1.1);
+    transition: 0.5s ease-in-out;
+}
+
+@media screen and (max-width:992px) {
+    .song-item{
+    display: flex !important;
+    flex-direction: column !important;
+    }
+    
+}
+
+
+@media screen and (min-width:600px) and (max-width:992px) {
+    .song-item select{
+        width: 50px;
+       
+
+    }
+}
+
+/*-------------------------------------------- play button---------------------------------------------- */
+.play-button i{
+    transform: translateX(-7rem);
+    color: transparent;
+    font-size: 40px;
+   
+}
+.song-arange:hover .play-button i {
+    color: white;
+    transition: 0.5s ease-in-out;
+}
+
+/*------------------------------------- dropdown button---------------------------------------------- */
+
+.song-arange select{
+    border: none;
+    background: rgb(0,10,39);
+    color: white;
+    margin-bottom: 15vh;
+}
+
+
+/* ---------------------------------main--------------------------------------------------------- */
+
+.artists-info{
+    /* border: 2px solid red;  */
+    display: flex;
+    text-align: center;
+    justify-content: space-evenly;
+   
+}
+
+ .artists-info p{
+    margin-top: -15px;
+    font-weight: 900;
+    color: white;
+ }
+
+.artists-name img{
+    border: 1px solid white; 
+    border-radius: 50%; 
+    width: 10vw;
+    margin: 4px
+}
+.artists-name img:hover {
+    /* border: 1px solid rgb(241, 66, 66);  */
+    transform: scale(1.1,1.1);
+    transition: 0.5s ease-in-out;
+}
+
+/*-------------------------------------------- play button---------------------------------------------- */
+
+.play-button-2 i{
+    transform: translateY(-4.5rem) translateX(0rem) ;
+    color: transparent;
+    font-size: 25px;
+}
+
+.artists-name:hover .play-button-2 i {
+    color: white;
+    transition: 0.5s ease-in-out;
+}
+
+/*---------------------------------------------------- main media quere----------------------------------------------- */
+
+/* @media screen and (max-width:992px){
+    .artists-info .play-button-2 i{
+        transform: translateY(-3.4rem);
+    } 
+} */
+
+@media screen and (min-width:600px) and (max-width:992px) {
+    .artists-info .play-button-2 i{
+    font-size: 20px;
+    transform: translateY(-37px);
+    }
+    
+} 
+
+
+
+/* ------------------------------------------------------popular-artists-detail-------------------------------------- */
+
+.song-classes-info{
+    /* border: 2px solid black;  */
+    display: flex;
+    background-color: #060642;
+    margin-top: 15px;
+    justify-content: space-between;
+    text-align: center;
+    color: transparent;
+}
+.song-classes{
+    display: flex;
+    align-items: center;
+}
+.song-classes  p{
+    transform:  translateY(0rem) translateX(-3.9rem);
+    font-size: 20px;
+    font-family: sans-serif;
+    
+}
+
+.song-classes:hover p{
+    color: white;
+    transition: 0.5s ease-in-out;
+}
+
+.song-classes:hover img{
+    transform: scale(1.1, 1.1);
+    transition: 0.5s ease-in-out;
+}
+
+.song-classes img{
+    /* border: 1px solid red; */
+    border-radius: 50%;
+    width: 80px;
+}
+
+/*---------------------------------------------- popular media quere 1-------------------------------------------------- */
+
+
+@media screen and (max-width:992px){
+    .song-classes img{
+        width: 6vw;
+    }
+}
+/* @media screen and (max-width:992px){
+    .song-classes p{
+        font-size: 15px;
+        transform: translateX(-45px);
+    }
+}  */
+
+@media screen and (max-width:992px) and (min-width:600px) {
+    .song-classes p{
+        position: relative;
+        text-align: center;
+        font-size: 12px;
+        transform: translateX(-36px);
+    }
+}
+
+    
+
+.song-theme-details{
+    display: flex;
+    /* border:2px solid black;  */
+    justify-content: space-between;
+    text-align: center;
+    margin-top: 20px;
+
+}
+
+.song-theme-details p{
+    transform: translateY(-7rem);
+    color:transparent;
+    font-weight: 700;
+    font-family: sans-serif;
+    font-size: 20px;
+}
+
+.song-theme img{
+    width: 22vw;
+    height: 25vh;
+}
+
+.song-theme:hover p{
+    color: white;
+    transition: 0.5s ease-in-out;
+}
+
+.song-theme:hover  img{
+    transform: scale( 1.1, 1.1);
+    transition: 0.5s ease-in-out;
+}
+/*------------------------------------------------------- popular media quere 2-------------------------------------------------------------- */
+@media screen and (max-width:992px) {
+    .song-theme-details p{
+        transform: translateY(-6.5rem);
+    }
+}
+
+
+
+
+/*------------------------------------------ latest english song section--------------------------------------------- */
+
+.english-song-details{
+    /* border: 2px solid black;  */
+    display: flex;
+    justify-content: space-around;
+    line-height: 0px;
+    color: white;
+}
+
+.english-songs img{
+    width: 11vw;
+}
+
+.english-songs h5{
+    font-size: 13px;
+    font-family: sans-serif;
+}
+
+.english-songs p{
+    font-size: 10px;
+    font-family: sans-serif;
+}
+
+.english-songs:hover img{
+    transform: scale(1.1,1.1);
+    transition: 0.5s ease-in-out;
+}
+
+
+/*-------------------------------------------- play button---------------------------------------------- */
+.play-button-4 i{
+    transform: translateY(-6.5rem
+    
+    ) translateX(4rem);
+    color: transparent;
+    font-size: 25px;
+}
+
+.english-songs:hover .play-button-4 i {
+    color: white;
+    transition: 0.5s ease-in-out;
+}
+
+/*----------------------------------------------------------------------------- latest english song media quere -----------------------------------------------------------------------*/
+
+@media screen and (max-width:992px) {
+    .english-songs .play-button-4 i{
+        transform: translateY(-5rem) translateX(3rem); 
+    }
+    
+}
+
+/*------------------------------------------ latest hindi song section--------------------------------------------- */
+
+.hindi-song-details{
+    /* border: 2px solid black; */
+    display: flex;
+    justify-content: space-around;
+    font-size: 14px;
+    line-height: 5px;
+    color: white;
+}
+
+.hindi-songs img{
+    width: 11vw;
+}
+
+.hindi-songs h5{
+    font-size: 13px;
+    font-family: sans-serif;
+}
+
+.hindi-songs p{
+    font-size: 10px;
+    font-family: sans-serif;
+}
+
+.hindi-songs:hover img{
+    transform: scale(1.1,1.1);
+    transition: 0.5s ease-in-out;
+}
+
+
+/*-------------------------------------------- play button---------------------------------------------- */
+.play-button-5 i{
+    transform: translateY(-6.5rem
+    
+    ) translateX(4rem);
+    color: transparent;
+    font-size: 25px;
+}
+
+.hindi-songs:hover .play-button-5 i {
+    color: white;
+    transition: 0.5s ease-in-out;
+}
+/*------------------------------------------------------------------ latest hindi song media quere--------------------------------------- */
+
+@media screen and (max-width:992px) {
+    .hindi-songs .play-button-5 i{
+        transform: translateY(-5rem) translateX(3rem); 
+    }
+    
+}
+
+
+
+/*------------------------------------------- aside section-------------------------------------------- */
+aside{
+    /* border: 1px solid white; */
+    width: 25%;
+    margin-top: 15vh;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    height: 800px;
+}
+
+aside select{
+    border: none;
+    background-color: rgb(0,10,39);
+    color: white;
+}
+
+
+h2{
+    display: flex;
+    justify-content: space-between;
+    color: white;
+}
+
+    
+
+.playlist{
+    /* width: 30%; */
+    /* border: 2px solid black; */
+    display: flex;
+    flex-direction: column;
+   
+}
+
+
+.playlist-info{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* border: 1px solid red;  */
+    color: white;
+    line-height: 3px;
+    padding: 10px;
+
+
+}
+
+.playlist-info img{
+    width: 50px;
+    border-radius: 10%;
+} 
+
+.playlist-info h5{
+    font-size: 14px;
+
+}
+
+.playlist-info span i{
+    padding-left: 60px;
+}
+
+.playlist-info img:hover{
+    transform: scale(1.1, 1.1);
+    transition: 0.5s ease-in-out;
+}
+
+.playlist-info span i:hover{
+    color: red;
+    transition: 0.5s ease-in-out;
+    
+}
+
+/*--------------------------------------------- aside media quere-------------------------------------------------------------- */
+@media screen and (max-width:992px) {
+    
+    aside p{
+        font-size: 10px;
+        display: flex !important;
+        flex-direction: column;
+    }
+
+    aside i{
+        /* border: 1px solid rgb(226, 221, 221); */
+        padding-left: 0px !important;
+    }
+    
+}
+
+
+
+
+/*------------------------------------------------------- audio section-----------------------------------------------------*/
+.audio{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+}
+
+.audio source{
+    width: 50vw;
+}
+
+.audio-img{
+    display: flex;
+    align-items: center;
+    line-height: 0px
+}
+
+.audio-img img{
+    width:66px;
+}
+
+.audio-img span p{
+    font-family: sans-serif;
+    font-weight: 600;
+    color: white;
+    padding-left: 50px;
+}
+
+.audio-img span i{
+    padding-left: 3vw;
+    color: white;
+}
+
+.font-awe{
+    color: white;
+}
+
+.font-awe i{
+    padding-left: 30px;
+    font-size: 25px;
+}
+
+
+
+.audio-img:hover img{
+    transform: scale(1.1, 1.1);
+    transition: 0.5s ease-in-out;
+}
+
+.audio-img span i:hover{
+    color: red;
+    transition: 0.5s ease-in-out;
+    
+}
+
+/* --------------------------------------audio media quere------------------------------------------------- */
+
+@media screen and (max-width:992px){
+    .font-awe i{
+        display: none;
+    }
+}
+    
