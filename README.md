@@ -1,11 +1,13 @@
-#Music-Player #Link of Project is-https://suyash-200.github.io/music-player
+# Music-Player 
 
-#Project Description: I Created Music Player By using Html, Css.
+# Link of Project is-https://suyash-200.github.io/music-player
 
-#Features Responsive Live previews Fullscreen mode Cross platform
+# Project Description: I Created Music Player By using Html, Css.
+
+# Features Responsive Live previews Fullscreen mode Cross platform
 
 🚀 About Me I'm a frontEnd Web developer https://github.com/Suyash-200
 
-Author www.linkedin.com/in/utkarsh-srivastava-a02471190
+# Author www.linkedin.com/in/utkarsh-srivastava-a02471190
 
 Suyash Srivastava
