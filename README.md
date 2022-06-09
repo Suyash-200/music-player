@@ -6,7 +6,7 @@
 
 # Features Responsive Live previews Fullscreen mode Cross platform
 
-🚀 About Me I'm a frontEnd Web developer https://github.com/Suyash-200
+# 🚀 About Me I'm a frontEnd Web developer https://github.com/Suyash-200
 
 # Author www.linkedin.com/in/utkarsh-srivastava-a02471190
 
